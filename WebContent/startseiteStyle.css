@@ -1,0 +1,141 @@
+/*
+	Autor:	Leandro Silva
+	Datum:	17.10.2017
+	
+	Stylesheet für das die Startseite vom Projekt Autokonfigurator.
+*/
+
+/* ---------------------------------------------------------------------------------------- */
+/* 	Allgemeine Definitionen */
+/* ---------------------------------------------------------------------------------------- */
+*{
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+	width: 100%;
+}
+body{
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	margin: 0;
+	padding: 0;
+}
+
+@keyframes bmwtitelChangeColor {
+    from {color: white;}
+    to {color: black;}
+}
+
+@keyframes mercedestitelChangeColor {
+    from {color: black;}
+    to {color: white;}
+}
+
+#auswahlbmw {
+	background-color: black;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+#auswahlbmw:hover {
+	width: 49%;
+	height: 99%;
+	border-style: solid;
+	border-color: grey;
+	border-width: 1%;
+}
+#auswahlbmw:hover #bmwtitel {
+	animation-name: none;
+}
+
+#bmwlogo {
+	width: 50%;
+	height: 70%;
+	margin: auto;
+	margin-top: 8%;
+}
+
+#bmwlogobild {
+	width: 98%;
+	height: 100%;
+}
+#bmwlogobilddiv {
+	margin: auto;
+	width: 90%;
+	height: 80%;
+}
+#bmwtitel {
+	margin-top: 4%;
+	width: 100%;
+	text-align: center;
+	font-family: arial, sans-serif;
+	font-size: 28px;
+	color: white;
+	animation-name: bmwtitelChangeColor;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.logo {
+	width: 10%;
+	height: 10%;
+}
+
+#auswahlmercedes {
+	background-color: black;
+	width: 50%;
+	height: 100%;
+	float: right;
+}
+
+#auswahlmercedes:hover {
+	width: 49%;
+	height: 99%;
+	border-style: solid;
+	border-color: grey;
+	border-width: 1%;
+}
+#auswahlmercedes:hover #mercedestitel {
+	animation-name: none;
+}
+
+#mercedeslogo {
+	width: 50%;
+	height: 70%;
+	margin: auto;
+	margin-top: 8%;
+}
+
+#mercedeslogobild {
+	width: 98%;
+	height: 100%;
+}
+#mercedeslogobilddiv {
+	margin: auto;
+	width: 90%;
+	height: 80%;
+}
+#mercedestitel {
+	margin-top: 4%;
+	width: 100%;
+	text-align: center;
+	font-family: arial, sans-serif;
+	font-size: 28px;
+	color: white;
+	animation-name: mercedestitelChangeColor;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#mainStartseite {
+	float: left;
+	width: 100%;
+	height: 80%;
+	background-color: #e6e6e6;
+}

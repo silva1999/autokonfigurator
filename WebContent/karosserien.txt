@@ -1,0 +1,197 @@
+//---- Alpina weiss
+#bildfelgedivhinten {
+	width: 34%;
+	height: 43%;
+	z-index: 5;
+	position: absolute;
+	float: left;
+	top: 43%;
+	left: 56%;
+	/*padding-top: 26%;
+	padding-right: 10%;
+	padding-left: 71%;
+	padding-bottom: 10%;*/
+}
+
+#bildfelgedivvorne {
+	width: 34%;
+	height: 43%;
+	z-index: 4;
+	position: absolute;
+	float: left;
+	top: 43.5%;
+	left: 18.5%;
+}
+
+#reifendiv {
+	width: 77%;
+	height: 80%;
+	z-index: 1;
+	position: absolute;
+	float: left;
+	top: 10%;
+	left: 14%;
+}
+
+#reifen {
+	width: 77%;
+	height: 80%;
+}
+
+#bremsedivvorne {
+	width: 34%;
+	height: 43%;
+	z-index: 2;
+	position: absolute;
+	float: left;
+	top: 44.5%;
+	left: 19%;
+}
+
+.bremse {
+	width: 20%;
+	height: 27%;
+}
+
+#bremsedivhinten {
+	width: 34%;
+	height: 43%;
+	z-index: 3;
+	position: absolute;
+	float: left;
+	top: 44%;
+	left: 56.5%;
+}
+
+#spiegeldiv {
+	width: 77.5%;
+	height: 77%;
+	z-index: 3;
+	position: absolute;
+	float: left;
+	top: 12%;
+	left: 14%;
+}
+
+#spiegel {
+	width: 77.5%;
+	height: 77%;
+}
+#karosseriediv {
+	width: 74%;
+	height: 42%;
+	z-index: 3;
+	position: absolute;
+	float: left;
+	top: 28.5%;
+	left: 15.5%;
+}
+
+//Schwarz
+
+
+//Blau
+.bildfelge {
+	width: 22%;
+	height: 29%;
+}
+
+#bilddiv {
+	width: 59.5%;
+	height: 64%;
+	z-index: 0;
+	position: absolute;
+	
+}
+
+#bildfelgedivhinten {
+	width: 34%;
+	height: 43%;
+	z-index: 5;
+	position: absolute;
+	float: left;
+	top: 43%;
+	left: 56%;
+	/*padding-top: 26%;
+	padding-right: 10%;
+	padding-left: 71%;
+	padding-bottom: 10%;*/
+}
+
+#bildfelgedivvorne {
+	width: 34%;
+	height: 43%;
+	z-index: 4;
+	position: absolute;
+	float: left;
+	top: 43.5%;
+	left: 19%; /* verändert */
+}
+
+#reifendiv {
+	width: 77.5%; /* verändert */
+	height: 80%;
+	z-index: 1;
+	position: absolute;
+	float: left;
+	top: 10%;
+	left: 14%; /* verändert */
+}
+
+#reifen {
+	width: 77%;
+	height: 80%;
+}
+
+#bremsedivvorne {
+	width: 34%;
+	height: 43%;
+	z-index: 2;
+	position: absolute;
+	float: left;
+	top: 44.5%;
+	left: 19%;
+}
+
+.bremse {
+	width: 20%;
+	height: 27%;
+}
+
+#bremsedivhinten {
+	width: 34%;
+	height: 43%;
+	z-index: 3;
+	position: absolute;
+	float: left;
+	top: 44%;
+	left: 56.5%;
+}
+
+#spiegeldiv {
+	width: 78.5%; /* verändert */
+	height: 95%; /* verändert */
+	z-index: 3;
+	position: absolute;
+	float: left;
+	top: 7%; /* verändert */
+	left: 13%; /* verändert */
+}
+
+#spiegel {
+	width: 77.5%;
+	height: 77%;
+}
+
+#karosseriediv {
+	width: 77%; /* verändert */
+	height: 43%; /* verändert */
+	z-index: 3;
+	position: absolute;
+	float: left;
+	top: 27.5%; /* verändert */
+	left: 14.5%; /* verändert */
+}
+
+
+//Braun

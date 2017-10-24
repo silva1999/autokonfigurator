@@ -1,0 +1,295 @@
+/*
+	Autor:	Leandro Silva
+	Datum:	16.09.2017
+	
+	Stylesheet für das Projekt Autokonfigurator.
+*/
+
+/* ---------------------------------------------------------------------------------------- */
+/* 	Allgemeine Definitionen */
+/* ---------------------------------------------------------------------------------------- */
+*{
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+	width: 100%;
+}
+body{
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	margin: 0;
+	padding: 0;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* 	Wrapper Definition */
+/* ---------------------------------------------------------------------------------------- */
+#wrapper {
+	width: 100%;
+	height: 100%;
+	background-color: #e6e6e6;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* 	Header Bereich */
+/* ---------------------------------------------------------------------------------------- */
+#header {
+	width: 100%;
+	height: 10%;
+	background-color: #00e3fd;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* 	Navigator Bereich */
+/* ---------------------------------------------------------------------------------------- */
+#navigator {
+	float: left;
+	width: 14%;
+	height: 80%;
+	background-color: #e6e6e6;
+	border-right: 1px solid black;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* 	Main Bereich */
+/* ---------------------------------------------------------------------------------------- */
+#main {
+	float: left;
+	width: 85%;
+	height: 80%;
+	background-color: #e6e6e6;
+}
+
+#show {
+	float: left;
+	width: 70%;
+	height: 100%;
+	background-color: black;
+}
+
+#bild {
+	width: 100%;
+	height: 100%;
+}
+
+.bildfelge {
+	width: 22%;
+	height: 29%;
+}
+
+#bilddiv {
+	width: 59.5%;
+	height: 64%;
+	z-index: 0;
+	position: absolute;
+	
+}
+
+#bildfelgedivhinten {
+	width: 32%;		/* Weiss 32 / Blau 32/ Braun 32*/
+	height: 41%;	/* Weiss 41 / Blau 41/ Braun 41*/
+	z-index: 5;
+	position: absolute;
+	float: left;
+	top: 43%;		/* Weiss 43 / Blau 43/ Braun 42.8*/
+	left: 54.5%;	/* Weiss 54.5 / Blau 54/ Braun 54.5*/
+}
+
+#bildfelgedivvorne {
+	width: 32%;		/* Weiss 32 / Blau 32/ Braun 32*/
+	height: 41%;	/* Weiss 41 / Blau 41/ Braun 41*/
+	z-index: 4;
+	position: absolute;
+	float: left;
+	top: 43.5%;		/* Weiss 43.5 / Blau 43.5/ Braun 43.5*/
+	left: 19.5%;	/* Weiss 19.5 / Blau 20.7/ Braun 21.7*/
+}
+
+#reifendivvorne {
+	width: 11.5%; 	/* Weiss 11.5 / Blau 11.5/ Braun 11.5*/
+	height: 18.5%; 	/* Weiss 18.5 / Blau 18.5/ Braun 18.5*/
+	z-index: 4;
+	position: absolute;
+	float: left;
+	top: 42.5%; 	/* Weiss 42.5 / Blau 42.5/ Braun 42.5*/
+	left: 18.8%;		/* Weiss 18.8 / Blau 20/ Braun 21*/
+}
+
+#reifendivhinten {
+	width: 11.5%;	/* Weiss 11.5 / Blau 11.5/ Braun 11.5*/
+	height: 18.5%;	/* Weiss 18.5 / Blau 18.5/ Braun 18.5*/
+	z-index: 5;
+	position: absolute;
+	float: left;
+	top: 42%;		/* Weiss 42 / Blau 42/ Braun 41.8*/
+	left: 53.7%;	/* Weiss 53.7 / Blau 53.2/ Braun 53.7*/
+}
+
+.reifen {
+	width: 77%;
+	height: 80%;
+}
+
+#bremsedivvorne {
+	width: 32%;		/* Weiss 32 / Blau 32/ Braun 32*/
+	height: 41%;	/* Weiss 41 / Blau 41/  Braun 41*/
+	z-index: 2;
+	position: absolute;
+	float: left;
+	top: 44.5%;		/* Weiss 44.5 / Blau 44.5/ Braun 44.5*/
+	left: 20%;		/* Weiss 20 / Blau 21.2/ Braun 21.7*/
+}
+
+.bremse {
+	width: 20%;
+	height: 27%;
+}
+
+#bremsedivhinten {
+	width: 32%;		/* Weiss 32 / Blau 32/ Braun 32*/
+	height: 41%;	/* Weiss 41 / Blau 41/ Braun 41*/
+	z-index: 3;
+	position: absolute;
+	float: left;
+	top: 44%;		/* Weiss 44 / Blau 44/ Braun 44*/
+	left: 55%;		/* Weiss 55 / Blau 54.5/ Braun 54.5*/
+}
+
+#spiegeldiv {
+	width: 75.5%;	/* Weiss 75.5 / Blau 77/ Braun 77*/
+	height: 77%;	/* Weiss 77 / Blau 92/ Braun 92*/
+	z-index: 3;
+	position: absolute;
+	float: left;
+	top: 12%;		/* Weiss 12,14/ Blau 8.5/ Braun 8.5*/
+	left: 14%;		/* Weiss 14 / Blau 13.5/ Braun 13.5*/
+}
+
+#spiegel {
+	width: 77.5%;
+	height: 77%;
+}
+#karosseriediv {
+	width: 70%;
+	height: 42%;
+	z-index: 3;
+	position: absolute;
+	float: left;
+	top: 28.5%;		/* Weiss 28.5, 30.5, 28 / Blau 28.5, 29.5 , 27.5 / Schwarz 28.5, 29.5, 27.5 / Braun 28.5, 30, 27.5*/
+	left: 16.5%;	/* Weiss 12, 14, 11.5 / Blau 8.5, 9.5 , 7.5 / Schwarz 8.5, 9.5, 7.5 / Braun 8.5, 10, 7.5*/
+}
+
+
+#karosserie {
+	/*width: 77%;
+	height: 80%;*/
+}
+
+.karosserieKonfig {
+	width: 74%;
+	height: 60%;
+}
+
+#bildSector {
+	width: 100%;
+	height: 80%;
+}
+
+#sound {
+	width: 59.5%;
+	height: 16%;
+	background-color: #e6e6e6;
+	z-index: 10;
+	position: absolute;
+	
+}
+
+#soundText {
+	padding-top: 5%;
+}
+
+#konfigurator {
+	float: left;
+	width: 26.5%;
+	height: 80%;
+	background-color: #e6e6e6;
+	z-index: 10;
+	position: absolute;
+	left: 73.5%;
+}
+
+.zelle {
+	width: 50%;
+}
+
+.zelle2 {
+	width: 50%;
+}
+
+#konfigInfos {
+	width: 100%;
+	height: 80%;
+}
+
+#konfigInfos table{
+	width: 100%;
+}
+
+#fahrwerk {
+	width: 100%;
+	height: 20%;
+}
+
+#tabelle1 {
+	width: 100%;
+	height: 20%;
+}
+
+#tabelle2 {
+	width: 100%;
+	height: 20%;
+}
+
+#tabelle3 {
+	width: 100%;
+	height: 60%;
+}
+
+#felgevorschau {
+	width: 80%;
+	height: 40%;
+	padding-left: 10%;
+}
+
+#felgelabel {
+	width: 30%;
+	height: 100%;
+	float: left;
+}
+
+#auswahlfelge {
+	width: 70%;
+	height: 100%;
+	float: left;
+}
+
+#zuruck {
+	float: left;
+}
+
+#weiter {
+	float: right;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* 	Footer Bereich */
+/* ---------------------------------------------------------------------------------------- */
+#footer {
+	float: left;
+	width: 100%;
+	height: 10%;
+	background-color: #00e3fd;
+}
