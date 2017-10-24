@@ -6,7 +6,7 @@
 
 /* ---------- Felgen Auswahl ---------- */
 function next() {
-	var verzeichnis = ""
+	var verzeichnis = "/M152_Autokonfigurator/resources/images/bmw_images/";
 		var bilder = ["bbsfelge2.png",
 		              "bbsfelge3.png",
 		              "bbsfelge4.png",
@@ -22,16 +22,16 @@ function next() {
 	var bild = bilder[zaehler];
 	document.getElementById('zaehler').value = zaehler;
 	
-	document.getElementById('felgevorschau').src = bild;
-	document.getElementById('bildfelgevorne').src = bild;
-	document.getElementById('bildfelgehinten').src = bild;
+	document.getElementById('felgevorschau').src = verzeichnis + bild;
+	document.getElementById('bildfelgevorne').src = verzeichnis + bild;
+	document.getElementById('bildfelgehinten').src = verzeichnis + bild;
 	
 	
 	window.load;
 }
 
 function ruckgang() {
-	var verzeichnis = ""
+	var verzeichnis = "/M152_Autokonfigurator/resources/images/bmw_images/"
 		var bilder = ["bbsfelge2.png",
 		              "bbsfelge3.png",
 		              "bbsfelge4.png",
@@ -47,16 +47,16 @@ function ruckgang() {
 		var bild = bilder[zaehler];
 		document.getElementById('zaehler').value = zaehler;
 		
-		document.getElementById('felgevorschau').src = bild;
-		document.getElementById('bildfelgevorne').src = bild;
-		document.getElementById('bildfelgehinten').src = bild;
+		document.getElementById('felgevorschau').src = verzeichnis + bild;
+		document.getElementById('bildfelgevorne').src = verzeichnis + bild;
+		document.getElementById('bildfelgehinten').src = verzeichnis + bild;
 		
 		window.load;
 }
 
 /* ---------- Auspuff Auswahl ---------- */
 function auspuff(){
-	var verzeichnis = "";
+	var verzeichnis = "/M152_Autokonfigurator/resources/audio/bmw_audio/";
 	var audios = ["e92remus.mp3",
 		              "e92eisenmann.mp3",
 		              "e92akrapovic.mp3"];
@@ -69,14 +69,14 @@ function auspuff(){
 	var info = infos[selected];
 	
 	document.getElementById('soundName').innerHTML = info;
-	document.getElementById('soundcheck').src = audio;
+	document.getElementById('soundcheck').src = verzeichnis + audio;
 	
 	window.load;
 }
 
 /* ---------- Lackierung Auswahl ---------- */
 function lackierung(){
-	var verzeichnis = "";
+	var verzeichnis = "/M152_Autokonfigurator/resources/images/bmw_images/";
 	var bilder = ["bmwe92weiss2.png",
 	              "bmwe92blau2.png",
 	              "bmwe92schwarz2.png",
@@ -153,7 +153,7 @@ function lackierung(){
 	var selected = parseInt(selectedAsString);
 	var bild = bilder[selected];
 	
-	document.getElementById('karosserie').src = bild;
+	document.getElementById('karosserie').src = verzeichnis + bild;
 	var fhintentop = parseFloat(document.getElementById('felgehintentop').value);
 	var fhintenleft = parseFloat(document.getElementById('felgehintenleft').value);
 	var rhintentop = parseFloat(document.getElementById('reifenhintentop').value);
