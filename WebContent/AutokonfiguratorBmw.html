@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Autokonfigurator - Bmw</title>
+	<link href="/M152_Autokonfigurator/resources/styles/bmw_styles/style.css" rel="stylesheet" type="text/css"/>
+	<script src="/M152_Autokonfigurator/resources/js/bmw_js/myscript.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<h1>Autokonfigurator - Bmw</h1>
+		</div>
+		<div id="navigator">
+		</div>
+		<div id="main">
+			<div id="show">
+				<div id="bildSector">
+					<div id="bilddiv"><img id="bild" src="/M152_Autokonfigurator/resources/images/background.jpg" alt="image"/></div>
+					<div id="bildfelgedivvorne"><img id="bildfelgevorne" class="bildfelge" src="/M152_Autokonfigurator/resources/images/bmw_images/bbsfelge2.png" alt="image"/></div>
+					<div id="bildfelgedivhinten"><img id="bildfelgehinten" class="bildfelge" src="/M152_Autokonfigurator/resources/images/bmw_images/bbsfelge2.png" alt="image"/></div>
+					<div id="reifendivvorne"><img class="reifen" src="/M152_Autokonfigurator/resources/images/pneu.png" alt="image"/></div>
+					<div id="reifendivhinten"><img class="reifen" src="/M152_Autokonfigurator/resources/images/pneu.png" alt="image"/></div>
+					<div id="bremsedivvorne"><img class="bremse" src="/M152_Autokonfigurator/resources/images/bmw_images/bremssattel.png" alt="image"/></div>
+					<div id="bremsedivhinten"><img class="bremse" src="/M152_Autokonfigurator/resources/images/bmw_images/bremssattel.png" alt="image"/></div>
+					<div id="spiegeldiv"><img id="spiegel" src="/M152_Autokonfigurator/resources/images/bmw_images/spiegel.png" alt="image"/></div>
+					<div id="karosseriediv"><img id="karosserie" class="karosserieKonfig" src="/M152_Autokonfigurator/resources/images/bmw_images/bmwe92weiss2.png" alt="image"/></div>
+				</div>
+				<div id="sound">
+					<div id="soundText">
+						<table>
+							<tr><td id="zelleTitel">Auto sound:</td><td id="zelleContent"><p id="soundName">Remus</p></td></tr>
+						</table>
+					</div>
+					<div id="audioDatei">
+						<audio id="soundcheck"  controls>
+							<source src="/M152_Autokonfigurator/resources/audio/bmw_audio/e92remus.mp3" type="audio/mp3">
+						</audio>
+					</div>
+				</div>
+			</div>
+			
+			<div id="konfigurator">
+				<div id="konfigInfos">
+					<div id="tabelle1">
+						<table>
+							<tr><td class="zelle">Marke:</td><td class="zelle2"><p id="marke">BMW</p></td></tr>
+							<tr><td class="zelle">Model:</td><td class="zelle2"><p id="model">335i e92</p></td></tr>
+							<tr><td class="zelle">Jahrgang:</td><td class="zelle2"><p id="jahrgang">2010</p></td></tr>
+						</table>
+					</div>
+					
+					<div id="tabelle2">
+						<table>
+							<tr>
+								<td class="zelle">Lackierung:</td>
+								<td class="zelle2">
+									<select id="farbe" onchange="lackierung()">
+										<option value="0">Alpina Weiss</option>
+										<option value="1">Blau</option>
+										<option value="2">Schwarz</option>
+										<option value="3">Braun</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td class="zelle">Auspuffanlage:</td>
+								<td class="zelle2">
+									<select id="auspuff" onchange="auspuff()">
+										<option value="0">Remus</option>
+										<option value="1">Eisenmann</option>
+										<option value="2">Akrapovic</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td class="zelle">Fahrwerk:</td>
+								<td class="zelle2">
+									<input id="fahrwerkregler" type="range" min="1" max="3" step="1" value="2" oninput="fahrwerk()" onchange="fahrwerk()" />
+								</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div id="tabelle3">
+						<input id="zaehler" type="hidden" name="zaehler" value="0"/>
+						<div id="felgelabel">Felgen:</div>
+						<div id="auswahlfelge">
+							<img id="felgevorschau" src="/M152_Autokonfigurator/resources/images/bmw_images/bbsfelge2.png" alt="image"/>
+							<input type="button" name="zuruck" id="zuruck" value="Zurück"  onclick="ruckgang();"/>
+							<input type="button" name="weiter" id="weiter" value="Weiter"  onclick="next();"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer">
+			<p>Modul 152, IABM15c, Leandro Silva</p>
+		</div>
+	</div>
+	
+	<!-- Input hidden Felder für Information weisser Bmw -->
+	<input type="hidden" id="felgehintentop" name="felgehintentop" value="42.8"/>
+	<input type="hidden" id="felgehintenleft" name="felgehintenleft" value="54"/>
+	<input type="hidden" id="reifenhintentop" name="reifenhintentop" value="41.8"/>
+	<input type="hidden" id="reifenhintenleft" name="reifenhintenleft" value="53.2"/>
+	<input type="hidden" id="bremsehintenleft" name="bremsehintenleft" value="54.5"/>
+	
+	<input type="hidden" id="felgevorneleft" name="felgevorneleft" value="19.5"/>
+	<input type="hidden" id="reifenvorneleft" name="reifenvorneleft" value="18.8"/>
+	<input type="hidden" id="bremsevorneleft" name="bremsevorneleft" value="20"/>
+	
+	<input type="hidden" id="spiegelwidth" name="spiegelwidth" value="75.5"/>
+	<input type="hidden" id="spiegelheight" name="spiegelheight" value="77"/>
+	<input type="hidden" id="spiegelleft" name="spiegelleft" value="13.5"/>
+	<input type="hidden" id="spiegeltop" name="spiegeltop" value="7.5"/>
+	
+	<input type="hidden" id="karrosserietop" name="karrosserietop" value="27.5"/>
+	
+	
+</body>
+</html>
