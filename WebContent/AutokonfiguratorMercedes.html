@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>Autokonfigurator - Mercedes</title>
-	<link href="/M152_Autokonfigurator/resources/styles/mercedes_styles/style.css" rel="stylesheet" type="text/css"/>
-	<script src="/M152_Autokonfigurator/resources/js/mercedes_js/myscript.js"></script>
+	<link href="/M152_Autokonfigurator/resources/styles/mercedes_styles/merc_style.css" rel="stylesheet" type="text/css"/>
+	<script src="/M152_Autokonfigurator/resources/js/mercedes_js/merc_script.js"></script>
 </head>
 <body>
 	<div id="wrapper">
@@ -56,10 +56,9 @@
 								<td class="zelle">Lackierung:</td>
 								<td class="zelle2">
 									<select id="farbe" onchange="lackierung()">
-										<option value="0">Alpina Weiss</option>
-										<option value="1">Blau</option>
-										<option value="2">Schwarz</option>
-										<option value="3">Braun</option>
+										<option value="0">Metalic Grau</option>
+										<option value="1">Schwarz</option>
+										<option value="2">Weiss</option>
 									</select>
 								</td>
 							</tr>
@@ -100,24 +99,22 @@
 		</div>
 	</div>
 	
-	<!-- Input hidden Felder für Information weisser Bmw -->
-	<input type="hidden" id="felgehintentop" name="felgehintentop" value="42.8"/>
-	<input type="hidden" id="felgehintenleft" name="felgehintenleft" value="54"/>
-	<input type="hidden" id="reifenhintentop" name="reifenhintentop" value="41.8"/>
-	<input type="hidden" id="reifenhintenleft" name="reifenhintenleft" value="53.2"/>
-	<input type="hidden" id="bremsehintenleft" name="bremsehintenleft" value="54.5"/>
+	<!-- Input hidden Felder für verschiedene Lackierungen -->
+	<input type="hidden" id="felgehintentop" name="felgehintentop" value="42"/>
+	<input type="hidden" id="felgehintenleft" name="felgehintenleft" value="55"/>
+	<input type="hidden" id="reifenhintentop" name="reifenhintentop" value="40.7"/>
+	<input type="hidden" id="reifenhintenleft" name="reifenhintenleft" value="54.2"/>
+	<input type="hidden" id="bremsehintenleft" name="bremsehintenleft" value="55.2"/>
+	<input type="hidden" id="bremsehintentop" name="bremsehintentop" value="42.7"/>
 	
-	<input type="hidden" id="felgevorneleft" name="felgevorneleft" value="19.5"/>
-	<input type="hidden" id="reifenvorneleft" name="reifenvorneleft" value="18.8"/>
-	<input type="hidden" id="bremsevorneleft" name="bremsevorneleft" value="20"/>
+	<input type="hidden" id="felgevorneleft" name="felgevorneleft" value="22.5"/>
+	<input type="hidden" id="reifenvorneleft" name="reifenvorneleft" value="21.8"/>
+	<input type="hidden" id="bremsevorneleft" name="bremsevorneleft" value="22.5"/>
 	
-	<input type="hidden" id="spiegelwidth" name="spiegelwidth" value="75.5"/>
-	<input type="hidden" id="spiegelheight" name="spiegelheight" value="77"/>
-	<input type="hidden" id="spiegelleft" name="spiegelleft" value="13.5"/>
-	<input type="hidden" id="spiegeltop" name="spiegeltop" value="7.5"/>
-	
-	<input type="hidden" id="karrosserietop" name="karrosserietop" value="27.5"/>
-	
+	<input type="hidden" id="karrosseriewidth" name="karrosseriewidth" value="75"/>
+	<input type="hidden" id="karrosserieheight" name="karrosserieheight" value="65"/>
+	<input type="hidden" id="karrosserietop" name="karrosserietop" value="2"/>
+	<input type="hidden" id="karrosserieleft" name="karrosserieleft" value="13"/>
 	
 </body>
 </html>

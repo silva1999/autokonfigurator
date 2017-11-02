@@ -103,43 +103,43 @@ body{
 }
 
 #bildfelgedivhinten {
-	width: 32%;		/* Weiss 32 / Blau 32/ Braun 32*/
-	height: 41%;	/* Weiss 41 / Blau 41/ Braun 41*/
+	width: 32%;		/* Grau  / Schwarz  / Weiss  */
+	height: 41%;	/* Grau  / Schwarz  / Weiss  */
 	z-index: 5;
 	position: absolute;
 	float: left;
-	top: 43%;		/* Weiss 43 / Blau 43/ Braun 42.8*/
-	left: 54.5%;	/* Weiss 54.5 / Blau 54/ Braun 54.5*/
+	top: 43%;		/* Grau  43/ Schwarz  42/ Weiss  42*/
+	left: 55%;	/* Grau  55/ Schwarz  57.5/ Weiss  56.5*/
 }
 
 #bildfelgedivvorne {
-	width: 32%;		/* Weiss 32 / Blau 32/ Braun 32*/
-	height: 41%;	/* Weiss 41 / Blau 41/ Braun 41*/
+	width: 32%;		/* Grau  / Schwarz  / Weiss  */
+	height: 41%;	/* Grau  / Schwarz  / Weiss  */
 	z-index: 4;
 	position: absolute;
 	float: left;
-	top: 43.5%;		/* Weiss 43.5 / Blau 43.5/ Braun 43.5*/
-	left: 19.5%;	/* Weiss 19.5 / Blau 20.7/ Braun 21.7*/
+	top: 43.5%;		/* Grau  43.5%/ Schwarz  43.5/ Weiss  43.5*/
+	left: 22.5%;	/* Grau  22.5%/ Schwarz  22.8/ Weiss  24.8*/
 }
 
 #reifendivvorne {
-	width: 11.5%; 	/* Weiss 11.5 / Blau 11.5/ Braun 11.5*/
-	height: 18.5%; 	/* Weiss 18.5 / Blau 18.5/ Braun 18.5*/
+	width: 11.5%; 	/* Grau  / Schwarz  / Weiss  */
+	height: 18.5%; 	/* Grau  / Schwarz  / Weiss  */
 	z-index: 4;
 	position: absolute;
 	float: left;
-	top: 42.5%; 	/* Weiss 42.5 / Blau 42.5/ Braun 42.5*/
-	left: 18.8%;		/* Weiss 18.8 / Blau 20/ Braun 21*/
+	top: 42.2%; 		/* Grau  42.2/ Schwarz  42.2/ Weiss  42.2*/
+	left: 21.8%;		/* Grau  21.8/ Schwarz  22/ Weiss  24*/
 }
 
 #reifendivhinten {
-	width: 11.5%;	/* Weiss 11.5 / Blau 11.5/ Braun 11.5*/
-	height: 18.5%;	/* Weiss 18.5 / Blau 18.5/ Braun 18.5*/
+	width: 11.5%;	/* Grau  / Schwarz  / Weiss  */
+	height: 18.5%;	/* Grau  / Schwarz  / Weiss  */
 	z-index: 5;
 	position: absolute;
 	float: left;
-	top: 42%;		/* Weiss 42 / Blau 42/ Braun 41.8*/
-	left: 53.7%;	/* Weiss 53.7 / Blau 53.2/ Braun 53.7*/
+	top: 42%;		/* Grau  42/ Schwarz  40.7/ Weiss  40.7*/
+	left: 54.2%;	/* Grau  54.2/ Schwarz  56.7/ Weiss  55.7*/
 }
 
 .reifen {
@@ -148,13 +148,13 @@ body{
 }
 
 #bremsedivvorne {
-	width: 32%;		/* Weiss 32 / Blau 32/ Braun 32*/
-	height: 41%;	/* Weiss 41 / Blau 41/  Braun 41*/
+	width: 32%;		/* Grau  / Schwarz  / Weiss  */
+	height: 41%;	/* Grau  / Schwarz  / Weiss  */
 	z-index: 2;
 	position: absolute;
 	float: left;
-	top: 44.5%;		/* Weiss 44.5 / Blau 44.5/ Braun 44.5*/
-	left: 20%;		/* Weiss 20 / Blau 21.2/ Braun 21.7*/
+	top: 44.5%;		/* Grau  44.5/ Schwarz  44.5/ Weiss  44.5*/
+	left: 22.5%;		/* Grau  22.5/ Schwarz  23/ Weiss  25*/
 }
 
 .bremse {
@@ -163,23 +163,23 @@ body{
 }
 
 #bremsedivhinten {
-	width: 32%;		/* Weiss 32 / Blau 32/ Braun 32*/
-	height: 41%;	/* Weiss 41 / Blau 41/ Braun 41*/
+	width: 32%;		/* Grau  32/ Schwarz  32/ Weiss  32*/
+	height: 41%;	/* Grau  41/ Schwarz  41/ Weiss  41*/
 	z-index: 3;
 	position: absolute;
 	float: left;
-	top: 44%;		/* Weiss 44 / Blau 44/ Braun 44*/
-	left: 55%;		/* Weiss 55 / Blau 54.5/ Braun 54.5*/
+	top: 44%;		/* Grau  44/ Schwarz  42.7/ Weiss  42.7*/
+	left: 55.2%;		/* Grau  55.2/ Schwarz  57.7/ Weiss  57.7*/
 }
 
 #spiegeldiv {
-	width: 75.5%;	/* Weiss 75.5 / Blau 77/ Braun 77*/
-	height: 77%;	/* Weiss 77 / Blau 92/ Braun 92*/
+	width: 75.5%;	/* Grau  / Schwarz  / Weiss  */
+	height: 77%;	/* Grau  / Schwarz  / Weiss  */
 	z-index: 3;
 	position: absolute;
 	float: left;
-	top: 12%;		/* Weiss 12,14/ Blau 8.5/ Braun 8.5*/
-	left: 14%;		/* Weiss 14 / Blau 13.5/ Braun 13.5*/
+	top: 12%;		/* Grau  / Schwarz  / Weiss  */
+	left: 14%;		/* Grau  / Schwarz  / Weiss  */
 }
 
 #spiegel {
@@ -187,13 +187,13 @@ body{
 	height: 77%;
 }
 #karosseriediv {
-	width: 70%;
-	height: 42%;
+	width: 75%;      /* Grau  75/ Schwarz  80/ Weiss  80*/
+	height: 65%;	/* Grau  65 / Schwarz  100/ Weiss  95*/
 	z-index: 3;
 	position: absolute;
 	float: left;
-	top: 28.5%;		/* Weiss 28.5, 30.5, 28 / Blau 28.5, 29.5 , 27.5 / Schwarz 28.5, 29.5, 27.5 / Braun 28.5, 30, 27.5*/
-	left: 16.5%;	/* Weiss 12, 14, 11.5 / Blau 8.5, 9.5 , 7.5 / Schwarz 8.5, 9.5, 7.5 / Braun 8.5, 10, 7.5*/
+	top: 21%;		/* Grau  22.3,21,20  / Schwarz  6.3,5,4 / Weiss  3,2 */
+	left: 15.5%;	/* Grau  15.5/ Schwarz  15/ Weiss  13*/
 }
 
 
