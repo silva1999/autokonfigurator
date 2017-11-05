@@ -1,6 +1,9 @@
 /*
- * Autor: Leandro Silva
- * Datum: 26.10.2017
+	Autor:		Leandro Silva
+	Datum:		02.11.2017
+	Programm:	Autokonfigurator
+	
+	Beschreibung: 	Das ist ein Javascript, welches für den Mercedes Konfigurator verwendet wird.
  */
 
 
@@ -202,4 +205,8 @@ function fahrwerk() {
 	}
 	
 	window.load;
+}
+
+function mercClicked() {
+	window.location = '/M152_Autokonfigurator/AuswahlMercedes.html';
 }

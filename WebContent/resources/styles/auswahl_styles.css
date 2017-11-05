@@ -1,0 +1,72 @@
+/*
+	Autor:	Leandro Silva
+	Datum:	02.11.2017
+	
+	Stylesheet für das Projekt Autokonfigurator.
+	Für die Auswahl von Bmw
+*/
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* 	Allgemeine Definitionen */
+/* ---------------------------------------------------------------------------------------- */
+*{
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+	width: 100%;
+}
+body{
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	margin: 0;
+	padding: 0;
+}
+
+#mainAuswahl {
+	float: left;
+	width: 100%;
+	height: 80%;
+	background-color: black;
+}
+
+#auswahlBild {
+	margin: auto;
+	margin-top: 2%;
+	width: 50%;
+	height: 60%;
+}
+
+
+#vorschauAuto {
+	width: 100%;
+	height: 100%;
+}
+
+#startKnopf {
+	margin: auto;
+	margin-top: 1%;
+	width: 18%;
+	height: 28%;
+}
+
+#engineBtn {
+	border-radius: 25px;
+	width: 100%;
+	height: 100%;
+}
+
+#engineBtn:hover {
+	border-radius: 80%;
+	border-style: solid;
+	border-color: black;
+	border-width: 0.1%;
+	cursor: pointer;
+}
+
+#engineSounddiv {
+	display: none;
+}

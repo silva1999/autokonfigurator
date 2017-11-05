@@ -1,20 +1,51 @@
+<!-- 
+	Autor:		Leandro Silva
+	Datum:		02.11.2017
+	Programm:	Autokonfigurator
+	
+	Beschreibung: 	Das ist die Seite von dem Mercedes Konfigurator.
+
+ -->
 <!DOCTYPE html>
 <html>
+
+<!-- ------------------------------------- Head Bereich ------------------------------------- -->
 <head>
+	<!-- Definitionen -->
 	<meta charset="utf-8">
 	<title>Autokonfigurator - Mercedes</title>
+	
+	<!-- CSS Styles -->
 	<link href="/M152_Autokonfigurator/resources/styles/mercedes_styles/merc_style.css" rel="stylesheet" type="text/css"/>
+	
+	<!-- Javascript Dateien -->
 	<script src="/M152_Autokonfigurator/resources/js/mercedes_js/merc_script.js"></script>
 </head>
+<!-- ------------------------------------- ENDE Head Bereich ------------------------------------- -->
+
+
+<!-- ------------------------------------- Body Bereich ------------------------------------- -->
 <body>
+	
+	<!-- Div für komplette Seite -->
 	<div id="wrapper">
+	
+		<!-- Kopfzeile -->
 		<div id="header">
 			<h1>Autokonfigurator - Mercedes</h1>
 		</div>
+		
+		<!-- Navigationsleiste -->
 		<div id="navigator">
 		</div>
+		
+		<!-- Content Bereich -->
 		<div id="main">
+		
+			<!-- Autovorschau -->
 			<div id="show">
+			
+				<!-- Auto Bild -->
 				<div id="bildSector">
 					<div id="bilddiv"><img id="bild" src="/M152_Autokonfigurator/resources/images/background.jpg" alt="image"/></div>
 					<div id="bildfelgedivvorne"><img id="bildfelgevorne" class="bildfelge" src="/M152_Autokonfigurator/resources/images/original_images/mercedes/felge_1.png" alt="image"/></div>
@@ -26,6 +57,8 @@
 					<!--  <div id="spiegeldiv"><img id="spiegel" src="/M152_Autokonfigurator/resources/images/bmw_images/spiegel.png" alt="image"/></div> -->
 					<div id="karosseriediv"><img id="karosserie" class="karosserieKonfig" src="/M152_Autokonfigurator/resources/images/mercedes_images/s63_grau.png" alt="image"/></div>
 				</div>
+				
+				<!-- Audio -->
 				<div id="sound">
 					<div id="soundText">
 						<table>
@@ -39,9 +72,15 @@
 					</div>
 				</div>
 			</div>
+			<!-- ENDE Autovorschau -->
 			
+			<!-- Auto Konfigurator -->
 			<div id="konfigurator">
+			
+				<!-- Konfigurations Fenster -->
 				<div id="konfigInfos">
+				
+					<!-- Informationen zum Auto -->
 					<div id="tabelle1">
 						<table>
 							<tr><td class="zelle">Marke:</td><td class="zelle2"><p id="marke">Mercedes</p></td></tr>
@@ -50,7 +89,10 @@
 						</table>
 					</div>
 					
+					<!-- Einstellungen Lackierung, Auspuffanlage, Fahrwerk -->
 					<div id="tabelle2">
+					
+						<!-- Einstellung Lackierung -->
 						<table>
 							<tr>
 								<td class="zelle">Lackierung:</td>
@@ -62,6 +104,8 @@
 									</select>
 								</td>
 							</tr>
+							
+							<!-- Einstellung Auspuffanlage -->
 							<tr>
 								<td class="zelle">Auspuffanlage:</td>
 								<td class="zelle2">
@@ -72,6 +116,8 @@
 									</select>
 								</td>
 							</tr>
+							
+							<!-- Einstellung Fahrwerk -->
 							<tr>
 								<td class="zelle">Fahrwerk:</td>
 								<td class="zelle2">
@@ -80,7 +126,9 @@
 							</tr>
 						</table>
 					</div>
+					<!-- ENDE KonfigInfos Bereich -->
 					
+					<!-- Einstellung Felgen wechseln -->
 					<div id="tabelle3">
 						<input id="zaehler" type="hidden" name="zaehler" value="0"/>
 						<div id="felgelabel">Felgen:</div>
@@ -92,14 +140,20 @@
 					</div>
 				</div>
 			</div>
+			<!-- ENDE Auto Konfigurator -->
 		</div>
+		<!-- ENDE Content Bereich -->
 		
+		<!-- Fusszeile -->
 		<div id="footer">
 			<p>Modul 152, IABM15c, Leandro Silva</p>
 		</div>
 	</div>
+	<!-- ENDE Wrapper Bereich -->
 	
-	<!-- Input hidden Felder für verschiedene Lackierungen -->
+	<!-- 	Input hidden Felder für verschiedene Lackierungen.
+			Werden verwendet um die CSS Grössen in der JavaScript Funktion anzupassen
+	-->
 	<input type="hidden" id="felgehintentop" name="felgehintentop" value="42"/>
 	<input type="hidden" id="felgehintenleft" name="felgehintenleft" value="55"/>
 	<input type="hidden" id="reifenhintentop" name="reifenhintentop" value="40.7"/>
@@ -115,6 +169,9 @@
 	<input type="hidden" id="karrosserieheight" name="karrosserieheight" value="65"/>
 	<input type="hidden" id="karrosserietop" name="karrosserietop" value="2"/>
 	<input type="hidden" id="karrosserieleft" name="karrosserieleft" value="13"/>
+	<!-- ENDE Input Hidden Felder -->
 	
 </body>
+<!-- ------------------------------------- ENDE Body Bereich ------------------------------------- -->
+
 </html>

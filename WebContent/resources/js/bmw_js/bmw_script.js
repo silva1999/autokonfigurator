@@ -1,27 +1,39 @@
 /*
- * Autor: Leandro Silva
- * Datum: 17.09.2017
+	Autor:		Leandro Silva
+	Datum:		02.11.2017
+	Programm:	Autokonfigurator
+	
+	Beschreibung: 	Das ist ein Javascript, welches für den BMW Konfigurator verwendet wird.
  */
 
 
 /* ---------- Felgen Auswahl ---------- */
+//Methode wechselt zu nächster Felge
 function next() {
+	//Definition der Variablen
 	var verzeichnis = "/M152_Autokonfigurator/resources/images/bmw_images/";
-		var bilder = ["bbsfelge2.png",
+	var bilder = ["bbsfelge2.png",
 		              "bbsfelge3.png",
 		              "bbsfelge4.png",
 		              "bmwm3felge.png",
 		              "bmwm3felge2.png",
 		              "originalbmwfelge.jpeg"];
+	
+	//Hole Momentanes Element
 	var zaehlerAsString = document.getElementById('zaehler').value;
 	var zaehler = parseInt(zaehlerAsString);
+	
+	//Setze index von neuem Element
 	zaehler = zaehler + 1;
 	if(zaehler >= bilder.length){
 		zaehler = 0;
 	}
+	
+	//Hole Bildnamen der Felge und setze neuen Index
 	var bild = bilder[zaehler];
 	document.getElementById('zaehler').value = zaehler;
 	
+	//Setze neues Bild
 	document.getElementById('felgevorschau').src = verzeichnis + bild;
 	document.getElementById('bildfelgevorne').src = verzeichnis + bild;
 	document.getElementById('bildfelgehinten').src = verzeichnis + bild;
@@ -249,4 +261,8 @@ function fahrwerk() {
 	}
 	
 	window.load;
+}
+
+function bmwClicked() {
+	window.location = '/M152_Autokonfigurator/AuswahlBmw.html';
 }

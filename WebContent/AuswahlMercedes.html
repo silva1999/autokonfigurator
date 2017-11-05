@@ -1,0 +1,72 @@
+<!-- 
+	Autor:		Leandro Silva
+	Datum:		02.11.2017
+	Programm:	Autokonfigurator
+	
+	Beschreibung: 	Das ist eine Zwischenseite für das Mercedes Fahrzeug.
+
+ -->
+<!DOCTYPE html>
+<html>
+
+<!-- ------------------------------------- Head Bereich ------------------------------------- -->
+<head>
+	<!-- Definitionen -->
+	<meta charset="utf-8">
+	<title>Autokonfigurator - Mercedes</title>
+	
+	<!-- CSS Styles -->
+	<link href="/M152_Autokonfigurator/resources/styles/bmw_styles/bmw_style.css" rel="stylesheet" type="text/css"/>
+	<link href="/M152_Autokonfigurator/resources/styles/startseiteStyle.css" rel="stylesheet" type="text/css"/>
+	<link href="/M152_Autokonfigurator/resources/styles/auswahl_styles.css" rel="stylesheet" type="text/css"/>
+	
+	<!-- JavaScript Dateien -->
+	<script src="/M152_Autokonfigurator/resources/js/mercedes_js/merc_start_script.js"></script>
+</head>
+<!-- ------------------------------------- ENDE Head Bereich ------------------------------------- -->
+
+
+<!-- ------------------------------------- Body Bereich ------------------------------------- -->
+<body>
+
+	<!-- Div für gesamte Seite -->
+	<div id="wrapper">
+	
+		<!-- Kopfzeile -->
+		<div id="header">
+			<h1>Autokonfigurator - Mercedes</h1>
+		</div>
+		
+		<!-- Content Bereich -->
+		<div id="mainAuswahl">
+		
+			<!-- Anzeige Bild -->
+			<div id="auswahlBild">
+				<img id="vorschauAuto" src="/M152_Autokonfigurator/resources/images/original_images/mercedes/s63_vorschau.jpg" alt="image"/>
+			</div>
+			
+			<!-- Starte Motoren Knopf -->
+			<div id="startKnopf">
+				<img id="engineBtn" src="/M152_Autokonfigurator/resources/images/start_engine.png" alt="image" onclick="startEngine()"/>
+			</div>
+			
+			<!-- Versteckte Audio Datei -->
+			<div id="engineSounddiv">
+				<audio id="engineSound">
+					<source src="/M152_Autokonfigurator/resources/audio/bmw_audio/e92remus.mp3" type="audio/mp3">
+				</audio>
+			</div>
+		</div>
+		<!-- ENDE Content Bereich -->
+		
+		<!-- Fusszeile -->
+		<div id="footer">
+			<p>Modul 152, IABM15c, Leandro Silva, 02.11.2017</p>
+		</div>
+	</div>
+	<!-- ENDE Wrapper Bereich -->
+	
+</body>
+<!-- ------------------------------------- ENDE Body Bereich ------------------------------------- -->
+
+</html>

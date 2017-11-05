@@ -1,19 +1,47 @@
+<!-- 
+	Autor:		Leandro Silva
+	Datum:		02.11.2017
+	Programm:	Autokonfigurator
+	
+	Beschreibung: 	Das ist die Startseite von dem Autokonfigurator.
+					Diese Seite wird zuerst angezeigt.
+
+ -->
 <!DOCTYPE html>
 <html>
+
+<!-- ------------------------------------- Head Bereich ------------------------------------- -->
 <head>
+	<!-- Definitionen -->
 	<meta charset="utf-8">
 	<title>Autokonfigurator</title>
-	<link href="/M152_Autokonfigurator/resources/styles/bmw_styles/style.css" rel="stylesheet" type="text/css"/>
+	
+	<!-- CSS Dateien -->
+	<link href="/M152_Autokonfigurator/resources/styles/bmw_styles/bmw_style.css" rel="stylesheet" type="text/css"/>
 	<link href="/M152_Autokonfigurator/resources/styles/startseiteStyle.css" rel="stylesheet" type="text/css"/>
-	<script src="myscript.js"></script>
+	
+	<!-- Javascript Dateien -->
+	<script src="/M152_Autokonfigurator/resources/js/bmw_js/bmw_script.js"></script>
+	<script src="/M152_Autokonfigurator/resources/js/mercedes_js/merc_script.js"></script>
 </head>
+<!-- ------------------------------------- ENDE Head Bereich ------------------------------------- -->
+
+
+<!-- ------------------------------------- Body Bereich ------------------------------------- -->
 <body>
+
+	<!-- Div für komplette Seite -->
 	<div id="wrapper">
+		<!-- Kopfzeile in der Seite -->
 		<div id="header">
 			<h1>Startseite</h1>
 		</div>
+		
+		<!-- Content Bereich -->
 		<div id="mainStartseite">
-			<div id="auswahlbmw">
+		
+			<!-- BMW Auswahlbereich, Verlinkung zu nächster Seite -->
+			<div id="auswahlbmw" onclick="bmwClicked()">
 				<div class="logo" id="bmwlogo">
 					<div id="bmwlogobilddiv">
 						<img id="bmwlogobild"  src="/M152_Autokonfigurator/resources/images/bmw_images/bmw_logo.png" alt="image"/>
@@ -23,7 +51,10 @@
 					</div>
 				</div>
 			</div>
-			<div id="auswahlmercedes">
+			<!-- ENDE BMW Auswahlbereich -->
+			
+			<!-- Mercedes Auswahlbereich, Verlinkung zu nächster Seite -->
+			<div id="auswahlmercedes" onclick="mercClicked()">
 				<div class="logo" id="mercedeslogo">
 					<div id="mercedeslogobilddiv">
 						<img id="mercedeslogobild"  src="/M152_Autokonfigurator/resources/images/mercedes_images/mercedes_logo.png" alt="image"/>
@@ -33,10 +64,17 @@
 					</div>
 				</div>
 			</div>
+			<!-- ENDE Mercedes Auswahlbereich -->
 		</div>
+		<!-- Ende Content Bereich -->
+		
+		<!-- Fusszeile -->
 		<div id="footer">
+			<p>Modul 152, IABM15c, Leandro Silva</p>
 		</div>
 	</div>
+	<!-- Ende Wrapper Bereich -->
 	
 </body>
+<!-- ------------------------------------- ENDE Body Bereich ------------------------------------- -->
 </html>
