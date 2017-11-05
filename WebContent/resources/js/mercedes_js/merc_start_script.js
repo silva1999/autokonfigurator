@@ -5,6 +5,8 @@
 	
 	Beschreibung: 	Das ist ein Javascript, welches für die Auswahl von einem Mercedes gebarucht wird.
  */
+
+//Die Funktion spielt eine Audiodatei ab und ruft danach eine neue Seite auf.
 function startEngine(){
     var audio = document.getElementById('engineSound');
     audio.play();

@@ -1,9 +1,10 @@
 /*
-	Autor:	Leandro Silva
-	Datum:	16.09.2017
+	Autor:		Leandro Silva
+	Datum:		02.11.2017
+	Programm:	Autokonfigurator
 	
-	Stylesheet für das Projekt Autokonfigurator.
-*/
+	Beschreibung: 	Das ist ein Stylesheet für den Autokonfigurator von Mercedes.
+ */
 
 /* ---------------------------------------------------------------------------------------- */
 /* 	Animationen  */
@@ -62,8 +63,46 @@ body{
 #navigator {
 	float: left;
 	width: 14%;
-	height: 80%;
+	height: 73%;
 	background-color: #e6e6e6;
+	padding-top: 2%;
+}
+
+#navStartseite {
+	border-style: solid;
+	border-color: white;
+	border-width: 1%;
+	width: 98%;
+	height: 7%;
+	background-color: #bdf9ff;
+	font-family: 'Signika', sans-serif;
+	text-align:center;
+	padding-top: 12%;
+}
+
+#navStartseite:hover {
+	background-color: #00e3fd;
+	color: white;
+}
+#navDokument {
+	margin-top: 1%;
+	border-style: solid;
+	border-color: white;
+	border-width: 1%;
+	width: 98%;
+	height: 7%;
+	background-color: #bdf9ff;
+	font-family: 'Signika', sans-serif;
+	text-align:center;
+	padding-top: 12%;
+}
+#navDokument a {
+	text-decoration: none;
+	color: black;
+}
+#navDokument:hover {
+	background-color: #00e3fd;
+	color: white;
 }
 
 /* ---------------------------------------------------------------------------------------- */
